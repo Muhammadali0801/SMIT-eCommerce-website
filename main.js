@@ -1,6 +1,6 @@
 let productsAdd =  document.querySelector("#mainDiv");
 
-fetch("https://fakestoreapi.com/product")
+fetch("https://fakestoreapi.com/products")
 .then((url) =>{
 return url.json();
 })
