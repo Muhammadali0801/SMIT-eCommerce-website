@@ -1,6 +1,6 @@
 let productsAdd =  document.querySelector("#mainDiv");
 
-fetch("https://fakestoreapi.com/products")
+fetch("https://fakestoreapi.com/product")
 .then((url) =>{
 return url.json();
 })
@@ -20,6 +20,9 @@ urlJason.map((urlEl) => {
 </div>
 `    
 })
+})
+.catch((a) => {
+    alert("SomeThing went wrong ", a)
 })
 
 let artNum =  document.querySelector("#cart"); 
